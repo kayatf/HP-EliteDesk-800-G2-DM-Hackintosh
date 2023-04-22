@@ -6,9 +6,9 @@ This repository contains the files and scripts to install macOS on the HP EliteD
 ## Hardware Specs
 ### Basic info
 Here is my EliteDesk 800 G2 DM specs:
-- Product Number: L2X86AV
+- Product Number: XXX
 - Product Name: HP EliteDesk 800 G2 DM 65W
-- BIOS: N21 Ver.02.21 11/01/2016
+- BIOS: XXX
 
 ### Specs:
 - CPU: Intel® Core i5-6500 @ 3.20 GHz processor (65 W model only)
@@ -17,7 +17,7 @@ Here is my EliteDesk 800 G2 DM specs:
 - Storage: Intenso NVMe drive 
 - LAN: Intel® I219M Gigabit Network Connection LOM
 - WLAN: Intel® Wi-Fi 6 AX200
-- Audio: Realtec ALC221 Audio Codec (all ports are stereo, 1 internal speaker, 1 front headphone, 1 front mic port)
+- Audio: Realtec ALC221 Audio Codec (all ports are stereo, 1 internal speaker, 1 front headphone, 1 front headphone/mic combo)
 
 ## Configure BIOS Settings
 To start, set BIOS to defaults.
@@ -104,4 +104,5 @@ Press **F10** to save changes.
 ## Known Issues:
 - VGA port is not supported
 - Sleep is not working (Reboot or blackscreen when trying to wake it)
+- Front headphone/mic combo jack is not working
 
