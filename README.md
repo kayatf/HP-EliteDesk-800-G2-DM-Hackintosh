@@ -11,13 +11,13 @@ Here is my EliteDesk 800 G2 DM specs:
 - BIOS: N21 Ver.02.21 11/01/2016
 
 ### Specs:
-- CPU: Intel® Core i7-6700 @ 3.40 GHz processor (65 W model only)
+- CPU: Intel® Core i5-6500 @ 3.20 GHz processor (65 W model only)
 - GPU: Integrated Intel® HD Graphics 530 (2 DisplayPorts + 1 VGA Port)
-- Memory: 1 x 8GB Micron DDR4-2400
-- Storage: SAMSUNG MZ7LN256HMJP-000H1 
+- Memory: 2 x 8GB DDR4-2400
+- Storage: Intenso NVMe drive 
 - LAN: Intel® I219M Gigabit Network Connection LOM
-- WLAN: BCM943224PCIEBT2 300Mbps 2.4&5G WiFi bluetooth 4.0 Mini PCIe
-- Audio: Realtec ALC221 Audio Codec (all ports are stereo, 1 internal speaker, 1 front headphone, 1 front CITA port)
+- WLAN: Intel® Wi-Fi 6 AX200
+- Audio: Realtec ALC221 Audio Codec (all ports are stereo, 1 internal speaker, 1 front headphone, 1 front mic port)
 
 ## Configure BIOS Settings
 To start, set BIOS to defaults.
@@ -57,25 +57,26 @@ Then insure:
 Press **F10** to save changes.
 
 ### Tested OS
-- macOS Catalina 10.15.7
-- macOS Big Sur 11.6
+- macOS Monterey 12.6.X
 
 ### Bootloader
-- OpenCore 0.7.3
+- OpenCore 0.9.1
 
 ### Kexts
-- VirtualSMC.kext (1.2.7)
-- SMCProcessor.kext (1.2.7)
-- SMCSuperIO.kext (1.2.7)
-- CPUFriend.kext (1.2.4)
-- IntelMausi.kext (1.0.7)
-- USBPorts.kext (1.0)
-- Lilu.kext (1.5.6)
-- AppleALC (1.6.4)
-- WhateverGreen.kext (1.5.3)
-- RTCMemoryFixup.kext (1.0.7)
-- AirportBrcmFixup.kext (2.1.3)
-- BrcmBluetoothInjector.kext (2.6.0)
+- AirportItlwm.kext
+- AppleALC.kext
+- BlueToolFixup.kext
+- CPUFriend.kext
+- FeatureUnlock.kext
+- IntelBluetoothFirmware.kext
+- IntelBTPatcher.kext
+- IntelMausi.kext
+- Lilu.kext
+- RTCMemoryFixup.kext
+- SMCProcessor.kext
+- USBPorts.kext
+- VirtualSMC.kext
+- WhateverGreen.kext
 
 ### USB 3.0 Ports
 **USB 2.0 Device**
@@ -98,13 +99,9 @@ Press **F10** to save changes.
 - HS09: Front Type-C
 
 **Bluetooth**
-- HS07: Internal Bluetooth (Thanks to [git-ken-hub](https://github.com/git-ken-hub) and [anthonyuk](https://github.com/anthonyuk))
+- HS07: Internal Bluetooth
 
 ## Known Issues:
 - VGA port is not supported
-- Front Headphone/Mic combo jack is not working
 - Sleep is not working (Reboot or blackscreen when trying to wake it)
-- Upgrade to macOS Big Sur 11.0.x from Catalina faces one time **Real-Time Clock (RTC) Power loss (005)** error, safely ignore it. When upgrade is finished, no RTC erros on normal reboot
 
-## Credits:
-Thanks to [sakoula](https://github.com/sakoula) and [HP EliteDesk 800 G2 Tower PC (Skylake) for macOS Big Sur & Catalina](https://github.com/sakoula/HP-EliteDesk-800-G2-6700)
