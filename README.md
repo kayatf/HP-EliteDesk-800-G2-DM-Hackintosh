@@ -103,6 +103,5 @@ Press **F10** to save changes.
 
 ## Known Issues:
 - VGA port is not supported
-- Sleep is not working (Reboot or blackscreen when trying to wake it)
 - Front headphone/mic combo jack is not working
 
